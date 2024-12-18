@@ -1,5 +1,10 @@
+main {
+  background-color: #3182ce;
+  height: 2000px;
+}
+
 .admin-panel {
-  max-width: 265px;
+  width: 290px;
   padding: 11px 21px;
   background-color: white;
   border-radius: 20px;
@@ -8,6 +13,7 @@
   justify-content: space-around;
   position: sticky;
   top: 0px;
+  left: 20px;
 }
 
 .admin-panel article,
@@ -40,17 +46,24 @@
 .icon {
   /* Test */
   /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
   color: #a0aec0;
   transition: all 0.4s ease-in-out;
 }
 
 .icon:hover {
+  box-shadow: 0 4px 12px rgb(226, 226, 226);
   color: black;
 }
 
 .icon::before {
   --blue-image: url("./../assets/images/icons-adminPanel/blue/Chart.svg");
   --white-image: url("./../assets/images/icons-adminPanel/white/Chart.svg");
+
+  outline: none;
+
   content: "";
   display: inline-block;
   border: 1px solid white;
@@ -65,6 +78,14 @@
   background-image: var(--white-image);
   background-color: #3182ce;
   border-color: black;
+}
+
+.icon:focus::before {
+  border-color: black;
+}
+
+.icon:active::before {
+  box-shadow: inset 0px 0px 10px 5px rgb(34, 30, 75);
 }
 
 #Control::before {
