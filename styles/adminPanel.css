@@ -1,8 +1,3 @@
-main {
-  background-color: #3182ce;
-  height: 2000px;
-}
-
 .admin-panel {
   width: 290px;
   padding: 11px 21px;
@@ -11,9 +6,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: sticky;
+  /* position: sticky;
   top: 0px;
-  left: 20px;
+  left: 20px; */
 }
 
 .admin-panel article,
