@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+  .admin-panel {
+    width: 80px;
+    height: 400px;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .admin-panel div {
+    min-width: 0;
+
+    &:last-child {
+        height: 160px;
+    }
+
+  }
+
+  .help-image img,
+  .help-image p {
+    display: none;
+  }
+
+  .icon::before {
+    margin-right: 0;
+  }
+
+  .pages h3 {
+    position: absolute;
+  }
+
+  .pages a,
+  .pages h3 {
+    overflow: hidden;
+    text-indent: 4ch;
+    white-space: nowrap;
+    width: 35px;
+    border-radius: 0;
+    padding: 0;
+
+  }
+
+  #documentation {
+    background-color: transparent;
+    position: absolute;
+    bottom: -30px;
+    padding: 0;
+  }
+
+  #documentation:focus {
+    text-decoration: underline;
+  }
+
+}
