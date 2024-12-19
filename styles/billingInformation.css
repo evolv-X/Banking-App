@@ -1,0 +1,106 @@
+.billing-information {
+  background-color: white;
+  border-radius: 20px;
+
+  max-width: 900px;
+  padding: 28px 21px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.billing-information h3 {
+  color: #2d3748;
+  font-weight: 700;
+  font-size: 18px;
+
+  margin-bottom: 17.5px;
+}
+
+.billing-information h4 {
+  font-weight: 700;
+  color: #718096;
+  font-size: 14px;
+
+  margin-bottom: 6.5px;
+}
+
+.billing-information a {
+  color: #e53e3e;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bills {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.delete::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+
+  position: relative;
+  top: 2.5px;
+  right: 2px;
+  background: url("./../assets/images/icons-billingInformation/Delete.svg")
+    no-repeat 0 / cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete:hover::before {
+  transform: translateY(-3px);
+}
+
+.delete:focus::before {
+  transform: translateX(-3px);
+}
+
+.delete:active::before {
+  transform: translateY(3px);
+}
+
+.change {
+  background: url("./../assets/images/icons-billingInformation/Change.svg")
+    no-repeat 0 / cover;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.change:hover {
+  transform: translateY(-3px);
+}
+
+.change:focus {
+  transform: translateX(3px);
+}
+
+.change:active {
+  transform: translateY(3px);
+}
+
+.bills article {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 26px 13px 26px 27px;
+}
+
+.bills article p {
+  font-weight: 400;
+  color: #a0aec0;
+  font-size: 12px;
+  line-height: 1.5;
+}
