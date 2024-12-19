@@ -33,6 +33,15 @@
   line-height: 1.5;
 }
 
+.bills {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .delete::before {
   content: "";
   display: inline-block;
@@ -44,6 +53,19 @@
   right: 2px;
   background: url("./../assets/images/icons-billingInformation/Delete.svg")
     no-repeat 0 / cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete:hover::before {
+  transform: translateY(-3px);
+}
+
+.delete:focus::before {
+  transform: translateX(-3px);
+}
+
+.delete:active::before {
+  transform: translateY(3px);
 }
 
 .change {
@@ -52,21 +74,31 @@
   display: inline-block;
   width: 7px;
   height: 7px;
+  transition: all 0.2s ease-in-out;
 }
 
-.billing-information article {
+.change:hover {
+  transform: translateY(-3px);
+}
+
+.change:focus {
+  transform: translateX(3px);
+}
+
+.change:active {
+  transform: translateY(3px);
+}
+
+.bills article {
   display: flex;
   justify-content: space-between;
 
   background-color: #f8f9fa;
   border-radius: 8px;
+  padding: 26px 13px 26px 27px;
 }
 
-.billing-information article div {
-  padding: 26px 13px 0 27px;
-}
-
-.billing-information article p {
+.bills article p {
   font-weight: 400;
   color: #a0aec0;
   font-size: 12px;
