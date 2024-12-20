@@ -9,7 +9,9 @@
     <link href="./styles/adminPanel.css" rel="stylesheet" />
     <link href="./styles/adminPanelMedia.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/transaction.css" />
+    <link rel="stylesheet" href="styles/payment.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body>
     <header></header>
@@ -42,6 +44,31 @@
           <a href="#" id="documentation">ДОКУМЕНТАЦИЯ</a>
         </article>
       </aside>
+
+      <section class="payment">
+        <div class="headpay">
+          <h3 class="sposobi-oplati">Способы оплаты</h3>
+          <div class="addpay">
+            <h4 class="add">ДОБАВИТЬ</h4>
+          </div>
+        </div>
+        <div class="carts">
+          <div class="cartochka">
+            <img src="assets/images/payment-icons/Mastercard.svg" alt="Mastercard" >
+            <div class="mir">
+              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
+            </div>
+            <img src="assets/images/payment-icons/edit.svg" alt="edit">
+          </div>
+          <div class="cartochka">
+            <img src="assets/images/payment-icons/Visa.svg" alt="VISA" >
+            <div class="mir">
+              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
+            </div>
+            <img src="assets/images/payment-icons/edit.svg" alt="edit">
+          </div>
+        </div>
+      </section>
 
       <section class="transaction">
         <div class="headingt">
@@ -150,6 +177,14 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="podval">
+        <div class="footerlinks">
+          <a href="#">Творческое время</a>
+          <a href="#">Блог</a>
+          <a href="#">Лицензия</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
