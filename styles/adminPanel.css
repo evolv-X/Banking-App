@@ -1,0 +1,140 @@
+.admin-panel {
+  width: 290px;
+  padding: 11px 21px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* position: sticky;
+  top: 0px;
+  left: 20px; */
+}
+
+.admin-panel article,
+.admin-panel div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* Test */
+  /* border: 1px solid black; */
+}
+
+.admin-panel div {
+  min-width: 200px;
+  height: 220px;
+  align-items: flex-start;
+}
+
+.pages a,
+.pages p {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.pages h3 {
+  font-weight: 700;
+}
+
+.icon {
+  /* Test */
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #a0aec0;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+  box-shadow: 0 4px 12px rgb(226, 226, 226);
+  color: black;
+}
+
+.icon::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/Chart.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/Chart.svg");
+
+  outline: none;
+
+  content: "";
+  display: inline-block;
+  border: 1px solid white;
+  padding: 15px;
+  margin-right: 20px;
+  border-radius: 8px;
+  background: var(--blue-image) no-repeat center/25px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover::before {
+  background-image: var(--white-image);
+  background-color: #3182ce;
+  border-color: black;
+}
+
+.icon:focus::before {
+  border-color: black;
+}
+
+.icon:active::before {
+  box-shadow: inset 0px 0px 10px 5px rgb(34, 30, 75);
+}
+
+#Control::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/House.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/House.svg");
+}
+
+#Billing::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/Billing.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/Billing.svg");
+}
+
+#RLT::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/RLT.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/RLT.svg");
+}
+
+#Profile::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/Profile.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/Profile.svg");
+}
+
+#Sign-in::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/SignIn.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/SignIn.svg");
+}
+
+#Sign-up::before {
+  --blue-image: url("./../assets/images/icons-adminPanel/blue/SignUp.svg");
+  --white-image: url("./../assets/images/icons-adminPanel/white/SignUp.svg");
+}
+
+.pages {
+  margin-bottom: 69px;
+}
+
+.help-image {
+  position: relative;
+  margin-bottom: 38px;
+
+  & p {
+    align-self: center;
+  }
+}
+
+#documentation {
+  background-color: #3182ce;
+  color: white;
+  padding: 10px 50px;
+  font-size: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.help:has(#documentation:hover) .help-image {
+  bottom: 10px;
+}

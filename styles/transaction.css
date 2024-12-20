@@ -1,0 +1,93 @@
+.transaction{
+    max-width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 28px 21px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.headingt{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17.5px;
+}
+
+.you_trans{
+    font-size: 18px;
+    color: #2D3748;
+    line-height: 25px;
+    align-self: flex-end;
+}
+
+.data{
+    font-size: 14px;
+    color: #A0AEC0;
+    line-height: 20px;
+    align-self: flex-end;
+}
+
+.data::before {
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    width: 1em;
+    height: 1em;
+    background-image: url(/assets/images/transaction-icons/outline.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.transi{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.spisok{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.when{
+    line-height: 15px;
+    font-size: 10px;
+    color: #A0AEC0;
+    margin-bottom: 17.5px;
+}
+
+.elem {  display: grid;
+    grid-template-columns: 35px auto auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px 14px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "chego kyda skoka"
+      "chego kogda skoka";
+  }
+  
+  .chego { grid-area: chego; align-self: center;}
+  
+  .kyda { grid-area: kyda; align-self: flex-end; font-size: 14px; color: #2D3748; width: 100%; line-height: 20px;}
+  
+  .kogda { grid-area: kogda; align-self: flex-end; font-size: 12px; color: #A0AEC0; width: 100%; line-height: 18px;}
+  
+  .skoka { grid-area: skoka; text-align: end; align-self: center; font-size: 14px; width: 100%; line-height: 19.5px;}
+
+
+.plus{
+    color: #48BB78;
+}
+
+.minus{
+    color: #E53E3E;
+}
+
+.errr{
+    color: #2D3748;
+}
+
