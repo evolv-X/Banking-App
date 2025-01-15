@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3182ce;
+  background-size: 1920px 440px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.podzagolovok {
+  font-size: 12px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.zagolovok {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap:  18;
+}
+
+.poisk {
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.vhod {
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: #3182ce;
+  cursor: pointer;
+}
+
+.setings {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.bell{
+    margin-left: 10px;
+    cursor: pointer;
+}
