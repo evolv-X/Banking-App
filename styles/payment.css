@@ -1,0 +1,58 @@
+.payment{
+    max-width: 990px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 24px;
+    font-family: Helvetica;
+}
+
+.headpay{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.sposobi-oplati{
+    font-size: 18px;
+    color: #2D3748;
+    align-self: flex-start;
+}
+
+.addpay{
+    padding: 10px 23px;
+    border-radius: 8px;
+    background-color: #2D3748;
+}
+
+.add{
+    font-size: 10px;
+    color: #FFFFFF
+}
+
+.carts{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.cartochka{
+    width: 100%;
+    padding: 23px 20px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.mir{
+    flex: 1;
+}
+
+.mir input{
+    color: #A0AEC0;
+}
+

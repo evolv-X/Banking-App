@@ -6,14 +6,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <!-- тут ваши индивидуальные css -->
+
+
     <link href="./styles/adminPanel.css" rel="stylesheet" />
     <link href="./styles/adminPanelMedia.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/transaction.css" />
+    <link rel="stylesheet" href="styles/payment.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="./styles/billingInformation.css" rel="stylesheet" />
+    <link href="./styles/billingInformationMedia.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Banking-App/style-card.css">
   </head>
   <body>
     <header></header>
     <main>
+      
+       <div class="cards-info">
+            <div class="card">
+                <img src="../Banking-App/img-card/logo.svg" alt="logo" class="logo-data">
+                <div class="card-data">
+                    <p class="card-number">7812 2139 0854 XXXX</p>
+                    <div class="info-card">
+                        <p>ДЕЙСТВИТЕЛЬНО ДО</p>
+                        <p class="text-card">05/25</p>
+                    </div>
+                    <div class="info-card1">
+                        <p>CVV</p>
+                        <p class="text-card">09X</p>
+                    </div>
+                </div>
+            </div>
+                <div class="salary">
+                    <img src="../Banking-App/img-card/walet_1.svg" alt="walet" class="img-salary">
+                    <div class="walet-card">
+                        <p class="walet-info">Зарплата</p>
+                        <p class="walet-inter">Интерактивное принадлежащее</p>
+                        <img src="../Banking-App/img-card/line.svg" alt="line">
+                        <p class="walet-info">+ 20.000 ₽</p>
+                    </div>
+                </div>
+
+                <div class="score">
+                    <img src="../Banking-App/img-card/score_1.svg" alt="score" class="img-score">
+                    <div class="score-card">
+                        <p class="score-info">Счет</p>
+                        <p class="score-inter">Фриланс</p>
+                        <img src="../Banking-App/img-card/line.svg" alt="line">
+                        <p class="walet-info">455.00 ₽</p>
+                    </div>
+                </div>
+        </div>
+      
       <aside class="admin-panel">
         <article class="pages">
           <div>
@@ -43,6 +87,31 @@
         </article>
       </aside>
 
+      <section class="payment">
+        <div class="headpay">
+          <h3 class="sposobi-oplati">Способы оплаты</h3>
+          <div class="addpay">
+            <h4 class="add">ДОБАВИТЬ</h4>
+          </div>
+        </div>
+        <div class="carts">
+          <div class="cartochka">
+            <img src="assets/images/payment-icons/Mastercard.svg" alt="Mastercard" >
+            <div class="mir">
+              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
+            </div>
+            <img src="assets/images/payment-icons/edit.svg" alt="edit">
+          </div>
+          <div class="cartochka">
+            <img src="assets/images/payment-icons/Visa.svg" alt="VISA" >
+            <div class="mir">
+              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
+            </div>
+            <img src="assets/images/payment-icons/edit.svg" alt="edit">
+          </div>
+        </div>
+      </section>
+
       <section class="transaction">
         <div class="headingt">
           <h3 class="you_trans">Ваши транзакции</h3>
@@ -56,7 +125,10 @@
             <div class="spisok">
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/red.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/red.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>Яндекс</p>
@@ -70,7 +142,10 @@
               </div>
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/green.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/green.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>Газпром</p>
@@ -91,7 +166,10 @@
             <div class="spisok">
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/green.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/green.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>Страйп</p>
@@ -105,7 +183,10 @@
               </div>
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/green.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/green.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>ВК</p>
@@ -119,7 +200,10 @@
               </div>
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/error.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/error.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>Кион</p>
@@ -133,7 +217,10 @@
               </div>
               <div class="elem">
                 <div class="chego">
-                  <img src="assets/images/transaction-icons/red.svg" alt="redicon" />
+                  <img
+                    src="assets/images/transaction-icons/red.svg"
+                    alt="redicon"
+                  />
                 </div>
                 <div class="kyda">
                   <p>Тинькофф</p>
@@ -147,6 +234,48 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="billing-information">
+        <h3>Информация о выставлении счетов</h3>
+        <div class="bills">
+          <article>
+            <div>
+              <h4>Оливер Лиам</h4>
+              <p>Название компании: Викинг Буррито</p>
+              <p>Адрес электронной почты: oliver@burrito.com</p>
+              <p>Номер НДС: FRB1235476</p>
+            </div>
+            <div>
+              <a href="#" class="delete">удалить</a>
+              <a href="#" class="change"></a>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h4>Оливер Лиам</h4>
+              <p>Название компании: Викинг Буррито</p>
+              <p>Адрес электронной почты: oliver@burrito.com</p>
+              <p>Номер НДС: FRB1235476</p>
+            </div>
+            <div>
+              <a href="#" class="delete">удалить</a>
+              <a href="#" class="change"></a>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h4>Оливер Лиам</h4>
+              <p>Название компании: Викинг Буррито</p>
+              <p>Адрес электронной почты: oliver@burrito.com</p>
+              <p>Номер НДС: FRB1235476</p>
+            </div>
+            <div>
+              <a href="#" class="delete">удалить</a>
+              <a href="#" class="change"></a>
+            </div>
+          </article>
         </div>
       </section>
     </main>
