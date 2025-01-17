@@ -40,6 +40,16 @@
   border: 1px solid #3182ce;
   border-radius: 8px;
   padding: 11.25px 17.25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bills-block a:hover {
+  background-color: #3182ce;
+  color: white;
+}
+
+.bills-block a:active {
+  background-color: #18548b;
 }
 
 .bills-block .bills-content {
@@ -52,6 +62,9 @@
 .bills-block article {
   align-items: center;
   margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 5px;
 }
 
 .bills-block article,
@@ -63,6 +76,18 @@
 
 .bills-block .date h3 {
   line-height: 2;
+}
+
+.bills-block article:hover .additional h3 {
+  bottom: 10px;
+}
+
+.bills-block article:focus {
+  border: 1px solid black;
+}
+
+.bills-block article:active .additional h3 {
+  top: 5px;
 }
 
 .additional h3::before {

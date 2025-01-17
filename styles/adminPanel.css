@@ -130,11 +130,22 @@
 
 #documentation {
   background-color: #3182ce;
+  border: 1px solid white;
   color: white;
   padding: 10px 50px;
   font-size: 10px;
   border-radius: 8px;
   position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+#documentation:active {
+  background-color: #18548b;
+}
+
+#documentation:focus {
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .help:has(#documentation:hover) .help-image {
