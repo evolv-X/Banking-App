@@ -1,10 +1,8 @@
 body {
-    background-color: #3182ce;
     font-family: Helvetica, sans-serif;
 }
 main {
     display: flex;
-
 }
 
 .content {
@@ -27,3 +25,14 @@ main {
     gap: 30px;
 }
 
+.upper-index {
+    z-index: 1;
+}
+
+.invisible-beauty {
+    background-color: #3182ce;
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+}
