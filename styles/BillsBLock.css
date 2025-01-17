@@ -1,0 +1,78 @@
+.bills-block {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 572px;
+  min-width: 500px;
+  padding: 28px 22.5px 19.5px;
+}
+
+.bills-block .tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bills-block h2,
+.bills-block h3,
+.bills-block p {
+  color: black;
+  font-weight: 700;
+}
+
+.bills-block h2 {
+  font-size: 18px;
+}
+
+.bills-block h3 {
+  font-size: 14px;
+  position: relative;
+}
+.bills-block p {
+  color: #a0aec0;
+  font-size: 12px;
+}
+
+.bills-block a {
+  font-size: 12px;
+  font-weight: 700px;
+  color: #3182ce;
+  border: 1px solid #3182ce;
+  border-radius: 8px;
+  padding: 11.25px 17.25px;
+}
+
+.bills-block .bills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.bills-block article {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bills-block article,
+.bills-block .additional {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.bills-block .date h3 {
+  line-height: 2;
+}
+
+.additional h3::before {
+  content: "";
+  display: block;
+  background: url("./../assets/images/icons-billsBlock/PDFile.svg") no-repeat
+    center;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  right: 30px;
+  bottom: 1px;
+}

@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/normalize.css" />
     <!-- тут ваши индивидуальные css -->
-    <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="stylesheet" href="styles/header-style.css"/>
-    <link rel="stylesheet" href="styles/adminPanel.css"/>
-    <link rel="stylesheet" href="styles/adminPanelMedia.css"/>
-    <link rel="stylesheet" href="styles/transaction.css"/>
-    <link rel="stylesheet" href="styles/payment.css"/>
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/billingInformation.css"/>
-    <link rel="stylesheet" href="styles/billingInformationMedia.css"/>
-    <link rel="stylesheet" href="styles/style-card.css">
+    <link rel="stylesheet" href="styles/header-style.css" />
+    <link rel="stylesheet" href="styles/adminPanel.css" />
+    <link rel="stylesheet" href="styles/adminPanelMedia.css" />
+    <link rel="stylesheet" href="styles/transaction.css" />
+    <link rel="stylesheet" href="styles/payment.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/billingInformation.css" />
+    <link rel="stylesheet" href="styles/billingInformationMedia.css" />
+    <link rel="stylesheet" href="styles/style-card.css" />
+    <link href="./styles/BillsBLock.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -38,43 +39,6 @@
       </div>
     </header>
     <main>
-      
-       <div class="cards-info">
-            <div class="card">
-                <img src="assets/images/img-card/logo.svg" alt="logo" class="logo-data">
-                <div class="card-data">
-                    <p class="card-number">7812 2139 0854 XXXX</p>
-                    <div class="info-card">
-                        <p>ДЕЙСТВИТЕЛЬНО ДО</p>
-                        <p class="text-card">05/25</p>
-                    </div>
-                    <div class="info-card1">
-                        <p>CVV</p>
-                        <p class="text-card">09X</p>
-                    </div>
-                </div>
-            </div>
-                <div class="salary">
-                    <img src="assets/images/img-card/walet_1.svg" alt="walet" class="img-salary">
-                    <div class="walet-card">
-                        <p class="walet-info">Зарплата</p>
-                        <p class="walet-inter">Интерактивное принадлежащее</p>
-                        <img src="assets/images/img-card/line.svg" alt="line">
-                        <p class="walet-info">+ 20.000 ₽</p>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <img src="assets/images/img-card/score_1.svg" alt="score" class="img-score">
-                    <div class="score-card">
-                        <p class="score-info">Счет</p>
-                        <p class="score-inter">Фриланс</p>
-                        <img src="assets/images/img-card/line.svg" alt="line">
-                        <p class="walet-info">455.00 ₽</p>
-                    </div>
-                </div>
-        </div>
-      
       <aside class="admin-panel">
         <article class="pages">
           <div>
@@ -104,197 +68,321 @@
         </article>
       </aside>
 
-      <section class="payment">
-        <div class="headpay">
-          <h3 class="sposobi-oplati">Способы оплаты</h3>
-          <div class="addpay">
-            <h4 class="add">ДОБАВИТЬ</h4>
-          </div>
-        </div>
-        <div class="carts">
-          <div class="cartochka">
-            <img src="assets/images/payment-icons/Mastercard.svg" alt="Mastercard" >
-            <div class="mir">
-              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
-            </div>
-            <img src="assets/images/payment-icons/edit.svg" alt="edit">
-          </div>
-          <div class="cartochka">
-            <img src="assets/images/payment-icons/Visa.svg" alt="VISA" >
-            <div class="mir">
-              <input type="text" class="cartnumber" placeholder="7812 2139 0823 XXXX">
-            </div>
-            <img src="assets/images/payment-icons/edit.svg" alt="edit">
-          </div>
-        </div>
-      </section>
+      <div class="content">
+        <div class="content-1">
+          <div>
+            <section class="cards-info">
+              <div class="card">
+                <img
+                  src="assets/images/img-card/logo.svg"
+                  alt="logo"
+                  class="logo-data"
+                />
+                <div class="card-data">
+                  <p class="card-number">7812 2139 0854 XXXX</p>
+                  <div class="info-card">
+                    <p>ДЕЙСТВИТЕЛЬНО ДО</p>
+                    <p class="text-card">05/25</p>
+                  </div>
+                  <div class="info-card1">
+                    <p>CVV</p>
+                    <p class="text-card">09X</p>
+                  </div>
+                </div>
+              </div>
+              <div class="salary">
+                <img
+                  src="assets/images/img-card/walet_1.svg"
+                  alt="walet"
+                  class="img-salary"
+                />
+                <div class="walet-card">
+                  <p class="walet-info">Зарплата</p>
+                  <p class="walet-inter">Интерактивное принадлежащее</p>
+                  <img src="assets/images/img-card/line.svg" alt="line" />
+                  <p class="walet-info">+ 20.000 ₽</p>
+                </div>
+              </div>
 
-      <section class="transaction">
-        <div class="headingt">
-          <h3 class="you_trans">Ваши транзакции</h3>
-          <h4 class="data">23 - 30 марта 2020 года</h4>
-        </div>
-        <div class="transi">
-          <div class="trday">
-            <div class="when">
-              <h5>САМЫЙ НОВЫЙ</h5>
-            </div>
-            <div class="spisok">
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/red.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>Яндекс</p>
-                </div>
-                <div class="kogda">
-                  <p>27 марта 2020 года, в 12:30 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="minus">-2500₽</p>
+              <div class="score">
+                <img
+                  src="assets/images/img-card/score_1.svg"
+                  alt="score"
+                  class="img-score"
+                />
+                <div class="score-card">
+                  <p class="score-info">Счет</p>
+                  <p class="score-inter">Фриланс</p>
+                  <img src="assets/images/img-card/line.svg" alt="line" />
+                  <p class="walet-info">455.00 ₽</p>
                 </div>
               </div>
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/green.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>Газпром</p>
-                </div>
-                <div class="kogda">
-                  <p>27 марта 2020 года, в 12:30 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="plus">+2500₽</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="trday">
-            <div class="when">
-              <h5>ВЧЕРА</h5>
-            </div>
-            <div class="spisok">
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/green.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>Страйп</p>
-                </div>
-                <div class="kogda">
-                  <p>26 марта 2020 года, в 13:45 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="plus">+800₽</p>
-                </div>
-              </div>
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/green.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>ВК</p>
-                </div>
-                <div class="kogda">
-                  <p>26 марта 2020 года, в 12:30 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="plus">+1700₽</p>
-                </div>
-              </div>
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/error.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>Кион</p>
-                </div>
-                <div class="kogda">
-                  <p>26 марта 2020 года, в 05:00 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="errr">В ожидании</p>
-                </div>
-              </div>
-              <div class="elem">
-                <div class="chego">
-                  <img
-                    src="assets/images/transaction-icons/red.svg"
-                    alt="redicon"
-                  />
-                </div>
-                <div class="kyda">
-                  <p>Тинькофф</p>
-                </div>
-                <div class="kogda">
-                  <p>25 марта 2020 года, в 16:30 часов</p>
-                </div>
-                <div class="skoka">
-                  <p class="minus">-987₽</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <section class="billing-information">
-        <h3>Информация о выставлении счетов</h3>
-        <div class="bills">
-          <article>
-            <div>
-              <h4>Оливер Лиам</h4>
-              <p>Название компании: Викинг Буррито</p>
-              <p>Адрес электронной почты: oliver@burrito.com</p>
-              <p>Номер НДС: FRB1235476</p>
+            <section class="payment">
+              <div class="headpay">
+                <h3 class="sposobi-oplati">Способы оплаты</h3>
+                <div class="addpay">
+                  <h4 class="add">ДОБАВИТЬ</h4>
+                </div>
+              </div>
+              <div class="carts">
+                <div class="cartochka">
+                  <img
+                    src="assets/images/payment-icons/Mastercard.svg"
+                    alt="Mastercard"
+                  />
+                  <div class="mir">
+                    <input
+                      type="text"
+                      class="cartnumber"
+                      placeholder="7812 2139 0823 XXXX"
+                    />
+                  </div>
+                  <img src="assets/images/payment-icons/edit.svg" alt="edit" />
+                </div>
+                <div class="cartochka">
+                  <img src="assets/images/payment-icons/Visa.svg" alt="VISA" />
+                  <div class="mir">
+                    <input
+                      type="text"
+                      class="cartnumber"
+                      placeholder="7812 2139 0823 XXXX"
+                    />
+                  </div>
+                  <img src="assets/images/payment-icons/edit.svg" alt="edit" />
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="bills-block">
+            <div class="tittle">
+              <h2>Счета</h2>
+              <a href="#">Посмотреть все</a>
             </div>
-            <div>
-              <a href="#" class="delete">удалить</a>
-              <a href="#" class="change"></a>
+            <div class="bills-content">
+              <article>
+                <div class="date">
+                  <h3>Март, 01, 2020</h3>
+                  <p>#MS-315646</p>
+                </div>
+                <div class="additional">
+                  <p>₽180</p>
+                  <h3>PDF</h3>
+                </div>
+              </article>
+              <article>
+                <div class="date">
+                  <h3>Февраль, 10, 2021</h3>
+                  <p>#RV-126749</p>
+                </div>
+                <div class="additional">
+                  <p>₽250</p>
+                  <h3>PDF</h3>
+                </div>
+              </article>
+              <article>
+                <div class="date">
+                  <h3>Апрель, 05, 2020</h3>
+                  <p>#FB-212562</p>
+                </div>
+                <div class="additional">
+                  <p>₽560</p>
+                  <h3>PDF</h3>
+                </div>
+              </article>
+              <article>
+                <div class="date">
+                  <h3>Июнь, 25, 2019</h3>
+                  <p>#QW-103578</p>
+                </div>
+                <div class="additional">
+                  <p>₽120</p>
+                  <h3>PDF</h3>
+                </div>
+              </article>
+              <article>
+                <div class="date">
+                  <h3>Март, 01, 2019</h3>
+                  <p>#AR-803481</p>
+                </div>
+                <div class="additional">
+                  <p>₽300</p>
+                  <h3>PDF</h3>
+                </div>
+              </article>
             </div>
-          </article>
-          <article>
-            <div>
-              <h4>Оливер Лиам</h4>
-              <p>Название компании: Викинг Буррито</p>
-              <p>Адрес электронной почты: oliver@burrito.com</p>
-              <p>Номер НДС: FRB1235476</p>
-            </div>
-            <div>
-              <a href="#" class="delete">удалить</a>
-              <a href="#" class="change"></a>
-            </div>
-          </article>
-          <article>
-            <div>
-              <h4>Оливер Лиам</h4>
-              <p>Название компании: Викинг Буррито</p>
-              <p>Адрес электронной почты: oliver@burrito.com</p>
-              <p>Номер НДС: FRB1235476</p>
-            </div>
-            <div>
-              <a href="#" class="delete">удалить</a>
-              <a href="#" class="change"></a>
-            </div>
-          </article>
+          </section>
         </div>
-      </section>
+        <div class="content-2">
+          <section class="billing-information">
+            <h3>Информация о выставлении счетов</h3>
+            <div class="bills">
+              <article>
+                <div>
+                  <h4>Оливер Лиам</h4>
+                  <p>Название компании: Викинг Буррито</p>
+                  <p>Адрес электронной почты: oliver@burrito.com</p>
+                  <p>Номер НДС: FRB1235476</p>
+                </div>
+                <div>
+                  <a href="#" class="delete">удалить</a>
+                  <a href="#" class="change"></a>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h4>Оливер Лиам</h4>
+                  <p>Название компании: Викинг Буррито</p>
+                  <p>Адрес электронной почты: oliver@burrito.com</p>
+                  <p>Номер НДС: FRB1235476</p>
+                </div>
+                <div>
+                  <a href="#" class="delete">удалить</a>
+                  <a href="#" class="change"></a>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h4>Оливер Лиам</h4>
+                  <p>Название компании: Викинг Буррито</p>
+                  <p>Адрес электронной почты: oliver@burrito.com</p>
+                  <p>Номер НДС: FRB1235476</p>
+                </div>
+                <div>
+                  <a href="#" class="delete">удалить</a>
+                  <a href="#" class="change"></a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="transaction">
+            <div class="headingt">
+              <h3 class="you_trans">Ваши транзакции</h3>
+              <h4 class="data">23 - 30 марта 2020 года</h4>
+            </div>
+            <div class="transi">
+              <div class="trday">
+                <div class="when">
+                  <h5>САМЫЙ НОВЫЙ</h5>
+                </div>
+                <div class="spisok">
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/red.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>Яндекс</p>
+                    </div>
+                    <div class="kogda">
+                      <p>27 марта 2020 года, в 12:30 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="minus">-2500₽</p>
+                    </div>
+                  </div>
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/green.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>Газпром</p>
+                    </div>
+                    <div class="kogda">
+                      <p>27 марта 2020 года, в 12:30 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="plus">+2500₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trday">
+                <div class="when">
+                  <h5>ВЧЕРА</h5>
+                </div>
+                <div class="spisok">
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/green.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>Страйп</p>
+                    </div>
+                    <div class="kogda">
+                      <p>26 марта 2020 года, в 13:45 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="plus">+800₽</p>
+                    </div>
+                  </div>
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/green.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>ВК</p>
+                    </div>
+                    <div class="kogda">
+                      <p>26 марта 2020 года, в 12:30 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="plus">+1700₽</p>
+                    </div>
+                  </div>
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/error.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>Кион</p>
+                    </div>
+                    <div class="kogda">
+                      <p>26 марта 2020 года, в 05:00 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="errr">В ожидании</p>
+                    </div>
+                  </div>
+                  <div class="elem">
+                    <div class="chego">
+                      <img
+                        src="assets/images/transaction-icons/red.svg"
+                        alt="redicon"
+                      />
+                    </div>
+                    <div class="kyda">
+                      <p>Тинькофф</p>
+                    </div>
+                    <div class="kogda">
+                      <p>25 марта 2020 года, в 16:30 часов</p>
+                    </div>
+                    <div class="skoka">
+                      <p class="minus">-987₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="podval">

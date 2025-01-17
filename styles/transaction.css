@@ -1,5 +1,6 @@
 .transaction{
     max-width: 600px;
+    min-width: 580px;
     background-color: white;
     border-radius: 20px;
     padding: 28px 21px;
