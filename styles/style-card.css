@@ -66,8 +66,8 @@
 }
 .cards-info{
     display: flex;
-    padding: 30px;
-    margin: 20px;
+    /* padding: 30px; */
+    margin-bottom: 20px;
 }
 .score{
     width: 240px;
