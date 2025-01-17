@@ -35,7 +35,7 @@
 }
 
 .bills {
-  min-height: 400px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
