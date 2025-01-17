@@ -14,8 +14,11 @@ main {
 }
 
 .content-1 {
+    display: flex;
     margin-bottom: 20px;
+    gap:20px
 }
+
 
 .content-2 {
     display: flex;
