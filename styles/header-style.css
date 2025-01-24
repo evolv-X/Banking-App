@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  
 }
 
 .left {
@@ -15,7 +14,7 @@
   font-size: 12px;
   font-family: Helvetica;
   color: white;
-  transform:translate(0px, -10px);
+  transform: translate(0px, -10px);
 }
 
 .zagolovok {
@@ -34,7 +33,9 @@
   padding: 10px;
   margin-right: 10px;
   border-radius: 4px;
-  
+}
+.poisk input {
+  border-radius: 8px;
 }
 
 .vhod {
@@ -42,20 +43,19 @@
   margin-right: 20px;
   background-color: #3182ce;
   cursor: pointer;
-  transform:translate(5px,-10px);
-  
+  transform: translate(5px, -10px);
 }
 
 .setings {
-  transform:translate(5px,-5px);
+  transform: translate(5px, -5px);
   cursor: pointer;
   padding: 10px;
-} 
+}
 
 .bell {
   cursor: pointer;
-  transform:translate(5px,-5px);
+  transform: translate(5px, -5px);
 }
-.lupa{
-  transform:translate(0px,-28px);
+.lupa {
+  transform: translate(0px, -28px);
 }
