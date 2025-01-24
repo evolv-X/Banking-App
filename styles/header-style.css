@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #3182ce;
-  background-size: 1920px 440px;
+  
 }
 
 .left {
@@ -14,43 +13,49 @@
 
 .podzagolovok {
   font-size: 12px;
+  font-family: Helvetica;
   color: white;
+  transform:translate(0px, -10px);
 }
 
 .zagolovok {
   font-size: 14px;
+  font-family: Helvetica;
   color: white;
 }
 
 .right {
   display: flex;
   align-items: center;
-  gap:  18;
+  gap: 18;
 }
 
 .poisk {
-  padding: 5px;
-  margin-right: 20px;
+  padding: 10px;
+  margin-right: 10px;
   border-radius: 4px;
+  
 }
 
 .vhod {
-  padding: 5px 10px;
+  padding: 10px;
   margin-right: 20px;
   background-color: #3182ce;
   cursor: pointer;
+  transform:translate(5px,-10px);
+  
 }
 
 .setings {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  margin-left: 10px;
+  transform:translate(5px,-5px);
   cursor: pointer;
+  padding: 10px;
+} 
+
+.bell {
+  cursor: pointer;
+  transform:translate(5px,-5px);
 }
-.bell{
-    margin-left: 10px;
-    cursor: pointer;
+.lupa{
+  transform:translate(0px,-28px);
 }
