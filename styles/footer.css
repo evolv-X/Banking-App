@@ -1,5 +1,8 @@
 footer {
   padding: 20px 37px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .footerlinks {
