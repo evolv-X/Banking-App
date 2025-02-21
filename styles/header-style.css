@@ -27,11 +27,12 @@
 .right {
   display: flex;
   align-items: center;
-  gap: 18;
+  gap: 18px;
 }
 
 .poisk {
-  padding: 10px;
+  position: relative;
+  padding: 10px 10px 10px 22px;
   margin-right: 10px;
   border-radius: 4px;
 }
@@ -40,23 +41,23 @@
 }
 
 .vhod {
-  padding: 10px;
+  
   margin-right: 20px;
   background-color: #3182ce;
   cursor: pointer;
-  transform: translate(5px, -10px);
+  
 }
 
 .setings {
-  transform: translate(5px, -5px);
   cursor: pointer;
-  padding: 10px;
+  
 }
 
 .bell {
   cursor: pointer;
-  transform: translate(5px, -5px);
 }
-.lupa {
-  transform: translate(0px, -28px);
+.lupa{
+  position: absolute;
+  top: 16px;
+  left: 20px;
 }
